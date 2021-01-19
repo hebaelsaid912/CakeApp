@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="16dp"
+    >
+    <TextView
+        android:id="@+id/product_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="name "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_Name"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        tools:text="one$" />
+    <TextView
+        android:id="@+id/product_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        tools:text="quantity"
+        android:layout_below="@+id/product_price"/>
+    <LinearLayout
+        android:id="@+id/SaleBTn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sold Out"
+            android:background="#DCD6DC"
+            android:padding="10dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+</RelativeLayout>
